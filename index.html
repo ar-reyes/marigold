@@ -9,33 +9,31 @@
   <title>Remember</title>
 </head>
 <body>
-  <div id="marquee">
-    <ul id="list">
-      <li>Welcome to the Day of the Dead Festival!
-        <br>This interactive altar is presented by ECE students from Trevecca,
-        Lipscomb, and MTSU.
-        <br>In this altar, participants are encouraged to enter the name of any
-        loved one they would like to remember.
-        <br>¡Bienvenido al Festival del Día de los Muertos!
-        <br>Este altar interactivo es presentado por estudiantes de ECE de
-        Trevecca, Lipscomb y MTSU.
-        <br>En este altar, se alienta a los participantes a ingresar el nombre
-        de cualquier ser querido que les gustaría recordar.
-      </li>
-    </ul>
-  </div>
-  <input type="text" id="add-name-box" autocomplete="off">
+  <ul id="list">
+    <li id="welcome-message">Welcome to the Day of the Dead Festival!
+      <br>This interactive altar is presented by ECE students from Trevecca,
+      Lipscomb, and MTSU.
+      <br>In this altar, participants are encouraged to enter the name of any
+      loved one they would like to remember.
+      <br>¡Bienvenido al Festival del Día de los Muertos!
+      <br>Este altar interactivo es presentado por estudiantes de ECE de
+      Trevecca, Lipscomb y MTSU.
+      <br>En este altar, se alienta a los participantes a ingresar el nombre
+      de cualquier ser querido que les gustaría recordar.
+    </li>
+  </ul>
+  <input type="text" id="input-box" autocomplete="off">
   <script>
   $(function(){
     // Add keyup function to input box
-    $("#add-name-box").keyup(function(){
+    $("#input-box").keyup(function(){
       /* If key is "ENTER" and the text box is not blank (this will prevent
       entering blank entries) */
-      if (event.which == 13 && $("#add-name-box").val().length != 0){
+      if (event.which == 13 && $("#input-box").val().length != 0){
         // Assign current input box value to variable "name"
-        let name = $("#add-name-box").val();
+        let name = $("#input-box").val();
         // Make the input box blank
-        $("#add-name-box").val("");
+        $("#input-box").val("");
         // Add the name to the list
         $("ul").append("<li>" + name + "</li>");
       }
