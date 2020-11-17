@@ -1,3 +1,37 @@
 #list{
   list-style-type: none;
+  animation: marquee 8s linear infinite;
+}
+
+@-webkit-keyframes marquee {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@-o-keyframes marquee {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@-moz-keyframes marquee {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
 }
