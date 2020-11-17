@@ -9,20 +9,30 @@
   <title>Remember</title>
 </head>
 <body>
-  <ul id="list">
-    <li id="welcome-message">Welcome to the Day of the Dead Festival!
-      <br>This interactive altar is presented by ECE students from Trevecca,
-      Lipscomb, and MTSU.
-      <br>In this altar, participants are encouraged to enter the name of any
-      loved one they would like to remember.
-      <br>¡Bienvenido al Festival del Día de los Muertos!
-      <br>Este altar interactivo es presentado por estudiantes de ECE de
-      Trevecca, Lipscomb y MTSU.
-      <br>En este altar, se alienta a los participantes a ingresar el nombre
-      de cualquier ser querido que les gustaría recordar.
-    </li>
-  </ul>
-  <input type="text" id="input-box" autocomplete="off">
+  <div id="list-wrapper">
+    <ul id="list">
+      <li>Welcome to the Day of the Dead Festival!</li>
+      <br>
+      <li>This interactive altar is presented by ECE students from Trevecca,
+        Lipscomb, and MTSU.
+        <br>In this altar, participants are encouraged to enter the name of any
+        loved one they would like to remember.
+      </li>
+      <br>
+      <li>¡Bienvenido al Festival del Día de los Muertos!</li>
+      <br>
+      <li>Este altar interactivo es presentado por estudiantes de ECE de
+        Trevecca, Lipscomb y MTSU.
+        <br>En este altar, se alienta a los participantes a ingresar el nombre
+        de cualquier ser querido que les gustaría recordar.
+      </li>
+      <br>
+      <li>Remember</li>
+    </ul>
+  </div>
+  <div id="input-box-wrapper">
+    <input type="text" id="input-box" autocomplete="off">
+  </div>
   <script>
   $(function(){
     // Add keyup function to input box
