@@ -26,13 +26,12 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
+  position: relative
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   list-style-type: none;
   font-size: 1.25rem;
-  line-height: 125%;
+  line-height: 150%;
   animation: marquee 16s linear infinite;
 }
 
