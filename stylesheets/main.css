@@ -101,9 +101,30 @@ body{
   outline: none;
 }
 
-@media only screen and (max-width: 320px){ /* For smaller screens such as
+@media only screen and (max-width: 360px){ /* For smaller screens such as
   iPhone 5s and Samsung Galaxy Fold */
   body{
     font-size: 1.15rem;
+  }
+}
+
+@media only screen and (min-width: 400px){
+  #list-wrapper{
+    margin: 5% 7% 0 7%;
+    width: calc(100% - 14%);
+  }
+
+  #input-box{
+    width: calc(100% - 14%);
+  }
+}
+
+@media only screen and (min-width: 768px){
+  body{
+    font-size: 1.75rem;
+  }
+
+  #input-box{
+    border-radius: 45px;
   }
 }
