@@ -1,6 +1,9 @@
 body{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
+  background-image: url("../images/marigold-background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 #list-wrapper{
