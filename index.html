@@ -49,13 +49,6 @@
         $("ul").append("<li>" + name + "</li>");
       }
     });
-    /* Set min height to prevent squishing the element when soft keyboard pops
-    up on mobile */
-    $(window).resize(function(){
-      var boxHeight = $("#input-box").height();
-      $("#input-box").height(boxHeight);
-      $("#input-box").css("min-height", boxHeight);
-    });
   });
   </script>
 </body>
