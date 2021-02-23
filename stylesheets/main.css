@@ -8,6 +8,7 @@ body{
   margin: 5vh 12.5%;
   width: 75%;
   height: 80vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,6 +68,7 @@ body{
 
 #input-box-wrapper{
   height: 10vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
