@@ -36,6 +36,11 @@
   </div>
   <script>
   $(function(){
+    var viewHeight = $(window).height();
+    var listHeight = .80 * viewHeight;
+    var inputHeight = .10 * viewHeight;
+    $('#list-wrapper').css('height', listHeight);
+    $('#input-box-wrapper').css('height', inputHeight);
     // Add keyup function to input box
     $("#input-box").keyup(function(){
       /* If key is "ENTER" and the text box is not blank (this will prevent
